@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Task Cards */
+.task-card {
+    transition: transform 0.2s;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.priority-h {
+    border-left: 4px solid #dc3545;
+}
+
+.priority-m {
+    border-left: 4px solid #ffc107;
+}
+
+.priority-l {
+    border-left: 4px solid #28a745;
+}
+
+/* Task Meta */
+.task-meta {
+    margin-top: 10px;
+}
+
+.task-meta span {
+    margin-right: 10px;
+}
+
+/* Dashboard Cards */
+.dashboard .card {
+    transition: transform 0.2s;
+}
+
+.dashboard .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Task Actions */
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .dashboard .card {
+        margin-bottom: 20px;
+    }
+    
+    .task-actions {
+        margin-top: 10px;
+    }
+}
